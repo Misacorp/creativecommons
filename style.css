@@ -150,6 +150,14 @@ body {
     left: 20px;
 }
 
+#basic {
+    background-color: #6a6a6a;
+}
+
+#basic_info {
+    background-color: #4a4a4a;
+}
+
 #film {
     background-color: #028491;
 }
