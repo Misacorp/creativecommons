@@ -28,10 +28,29 @@ body {
     max-width: 650px;
 }
 
+div:target {
+    max-height: 1600px;
+    transition: max-height 0.25s ease-in;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
 .pretitle {
     font-size: 16px;
     margin-bottom: 0;
-    float: left;
 }
 
 .main_title {
@@ -40,9 +59,8 @@ body {
     line-height: 1em;
     text-align: center;
     
-    margin-top: 5px;
+    margin-top: 15px;
     margin-bottom: 15px;
-    float: left;
 }
 
 .subtitle {
@@ -55,6 +73,9 @@ body {
 }
 
 #title {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 650px;
     margin-top: 40px;
     text-align: center;
 }
@@ -89,11 +110,6 @@ body {
     
     transition: max-height 0.15s ease-out;
     overflow: hidden;
-}
-
-.container:hover {
-    max-height: 800px;
-    transition: max-height 0.25s ease-in;
 }
 
 .stronk {
@@ -193,6 +209,10 @@ body {
 @media screen and (max-width: 640px) {
     .main_title {
             margin-top: 15px;
+            width: 90%;
+            font-size: 15vw;
+            margin-left: auto;
+            margin-right: auto;
     }
 }
 
