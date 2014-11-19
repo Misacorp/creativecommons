@@ -28,7 +28,20 @@ body {
     max-width: 650px;
 }
 
-div:target {
+div.ohjelma p:not(:target) {
+    background-color: red;
+    display: none;
+}
+div.ohjelma p:target {
+    background-color: green;
+    display: block;
+}
+
+#first {
+    background-color: black;
+}
+
+.container:target {
     max-height: 1600px;
     transition: max-height 0.25s ease-in;
 }
@@ -69,7 +82,7 @@ a:active {
     font-weight: 300;
     font-size: 20px;
     
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 #title {
@@ -78,6 +91,31 @@ a:active {
     max-width: 650px;
     margin-top: 40px;
     text-align: center;
+}
+
+#paivat {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    
+    background-color: yellow;
+    
+    text-align: center;
+    font-size: 24px;
+}
+
+.paivamaara {
+    display: inline-block;
+    margin: 0 10px 0 10px;
+    
+    text-align: center;
+    line-height: 60px;    /* Vertical center align hack */
+    
+    width: 60px;
+    height: 60px;
+    background-color: #FF3333;
+    border-radius: 300px;
 }
 
 .name {
