@@ -125,10 +125,28 @@ a:active {
     height: 60px;
     background-color: #AAAAAA;
     border-radius: 300px;
+    
+    font-size: 26px;
+    color: white;
 }
 
 .paivamaara:hover {
     box-shadow: inset 0 0 15px #888888;
+}
+
+.tab [type=radio] {
+    display: none;
+}
+
+[type=radio]:checked ~ label {
+}
+
+[type=radio]:checked ~ label ~ .content {
+    display: block;
+}
+
+.content {
+    display: none;
 }
 
 
@@ -210,11 +228,11 @@ a:active {
     left: 20px;
 }
 
-#basic {
+#basic, #basic_2 {
     background-color: #6a6a6a;
 }
 
-#basic_info {
+#basic_info, #basic_2_info {
     background-color: #4a4a4a;
 }
 
@@ -226,11 +244,11 @@ a:active {
     background-color: #015b64;
 }
 
-#press {
+#press, #press_2 {
     background-color: #d56d48;
 }
 
-#press_info {
+#press_info, #press_2_info {
     background-color: #90492e;
 }
 
@@ -240,6 +258,14 @@ a:active {
 
 #art_info {
     background-color: #946038;
+}
+
+#design {
+    background-color: #999C3C;
+}
+
+#design_info {
+    background-color: #6E7029;
 }
 
 
